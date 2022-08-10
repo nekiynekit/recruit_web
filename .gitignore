@@ -1,0 +1,5 @@
+recruit_test/recruit_test/__pycache__/
+recruit_test/hello/__pycache__/
+recruit_test/recruit_test/settings.py
+recruit_test/db.sqlite3
+recruit_env
