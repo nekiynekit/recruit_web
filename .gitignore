@@ -2,4 +2,3 @@ app/recruit_test/recruit_test/__pycache__/
 app/recruit_test/hello/__pycache__/
 app/recruit_test/db.sqlite3
 app/recruit_env
-docker-compose.yml
