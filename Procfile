@@ -1,1 +1,1 @@
-web gunicorn recruit-anime-web.wsgi:application
+web gunicorn recruit_web.wsgi:application
