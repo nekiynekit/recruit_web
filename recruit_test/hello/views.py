@@ -1,6 +1,7 @@
 from django.shortcuts import render
-
 from recruit_test.settings import TEMPLATES
+
+import os
 
 
 def hello(request):
@@ -15,6 +16,7 @@ def hello(request):
             'hello_message': hello_message,
             'welcome_message': welcome_message,
         }
-        address = "{}/hello_page.html".format(TEMPLATES[0]['DIRS'][0])
+        template_dir = TEMPLATES[0]['DIRS'][0]
+        address = os.path.join(template_dir, 'hello_page.html')
         
         return render(request, address, context=content)
