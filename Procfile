@@ -1,1 +1,1 @@
-web gunicorn recruit-anime-web.wsgi:application --log-file 
+web gunicorn recruit-anime-web.wsgi:application
