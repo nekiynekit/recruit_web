@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from recruit_test.settings import TEMPLATES
+
 
 def hello(request):
     if request.method == 'GET': 
@@ -13,5 +15,6 @@ def hello(request):
             'hello_message': hello_message,
             'welcome_message': welcome_message,
         }
+        address = "{}/hello_page.html".format(TEMPLATES[0]['DIRS'][0])
         
-        return render(request, 'hello_page.html', context=content)
+        return render(request, address, context=content)
